@@ -1,0 +1,72 @@
+:root {
+    --light: white;
+    --dark: rgb(232, 102, 236);
+    --gradient: rgba(232, 102, 236, .0.3) 0%
+                rgba(232, 102, 236, 0.6) 100%;
+    --border: 5px
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: flex-start;
+    background-color: #222831;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-direction: column;
+}
+
+header h1 {
+    text-align: center;
+    margin:0 auto;
+    padding: 20px;
+    color: var(--dark);
+    font-size: 200%;
+}
+
+header p {
+    color: var(--light);
+    text-align: center;
+    font-size: 100%;
+    padding: 20px;
+}
+
+main div {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    display: grid;
+    width: 50%;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 30px;
+    margin: 20px auto;
+}
+
+div h2 {
+    border-style: solid;
+    border-width: 1px;
+    color: var(--dark);
+    padding: 10px;
+    flex: 0 0 300px;
+    margin: 20px;
+    margin-top: -20px;
+    border-color: var(--light);
+    border-radius: var(--border);
+    position: relative;
+
+}
+
+.card p {
+    color: var(--dark);
+}
+
+.card {
+    position: relative;
+    border-style: dashed;
+    border-width: 1px;
+    color: var(--light);
+    padding: 10px;
+    flex: 0 0 300px;
+    /*transform: rotate(8deg);*/
+    margin: 20px;
+    border-color: var(--light);
+  }
